@@ -1,8 +1,9 @@
 PORCENTAJE_IVA = 13
-# karla creas la constante de IT
+IMPUESTO_TRANSACCIONES = 3
 def calcularPrecio(precio,porcentajeIva, porcentajeIT,porcentajeDescuento):
-    montodescuento = precio * (porcentajeDescuento / 100)
-    # karla calculas la variable del montoIva
+    montoDescuento = precio * (porcentajeDescuento / 100)
+    precioSubTotal = precio - montoDescuento
+    montoIva = precioSubTotal * (PORCENTAJE_IVA / 100)
     return montodescuento
 
 
