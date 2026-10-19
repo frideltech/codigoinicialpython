@@ -8,7 +8,11 @@ def CalcularPrecio(precio,porcentajeDescuento):
     return precioFinal
 def ValidarPrecio(precio):
     # Validar que el precio sea mayor a cero, si no lo es, retornar un mensaje de error, de lo contrario retornar True, variable tenga strip
-   
+   precio = precio.strip()
+   if precio > 0 :
+     return True
+   else:
+     return False
 
 def EjecutarModuloCaja():
     print("Bienvenido al módulo de caja")
